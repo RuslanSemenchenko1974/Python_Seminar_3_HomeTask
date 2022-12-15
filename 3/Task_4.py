@@ -20,12 +20,12 @@ def function_inter2():
         try:
             x = int(input())
         except ValueError:
-            print("Error! Это не число, попробуйте снова.")
+            print("Error! Попробуйте снова.")
         else:
             return x
 
 
-def f_degree(x, y):
+def my_func(x, y):
     temp = 1
     for i in range(abs(y)):
         if y < 0:
@@ -41,4 +41,4 @@ print('Введите число : ')
 us_namber = function_inter()
 print('Введите степень числа : ')
 us_degree = function_inter2()
-f_degree(x=us_namber, y=us_degree)
+my_func(x=us_namber, y=us_degree)

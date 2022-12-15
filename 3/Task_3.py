@@ -23,4 +23,4 @@ for i in range(3):
     print(f'Введите {i + 1} число : ')
     temp = function_inter()
     us_nambers.append(temp)
-my_func(a1=us_nambers[0], a2=us_nambers[1], a3=us_nambers[2])
+my_func(us_nambers[0], us_nambers[1], us_nambers[2])

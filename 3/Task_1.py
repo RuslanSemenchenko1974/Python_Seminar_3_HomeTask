@@ -13,13 +13,18 @@ def function_inter():
             return x
 
 
+def div_2(a1, a2):
+    try:
+        res = a1 / a2
+    except ZeroDivisionError:
+        print("Error!")
+    else:
+        return res
+
+
 print('Введите первое число  : ')
 namber_1 = function_inter()
-namber_2 = 0
-while namber_2 == 0:
-    print('Введите второе число  : ')
-    namber_2 = function_inter()
-    if namber_2 == 0:
-        print('Делить на ноль нельзя!')
-print(
-    f'Результат деления {namber_1} на {namber_2} равен : {namber_1 / namber_2}')
+print('Введите второе число  : ')
+namber_2 = function_inter()
+print(f'Результат деления {namber_1} на {namber_2} равен : '
+      f'{div_2(namber_1, namber_2)}')
